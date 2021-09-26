@@ -41,7 +41,6 @@
   background: url('./images/background.jpg') center / cover;
   display: grid;
   perspective: 70vw;
-  height: 100%;
   overflow: hidden;
   user-select: none;
   z-index: 0;
@@ -133,6 +132,10 @@
   width: var(--planet_mercury_size);
 }
 
+.space__planet_mercury:hover {
+  filter: drop-shadow(0 0 10px #f80);
+}
+
 .space__planet_venus {
   --_planet_distance: var(--planet_venus_distance);
   
@@ -140,6 +143,10 @@
   background: url('./images/venus.png') center / contain no-repeat;
   height: var(--planet_venus_size);
   width: var(--planet_venus_size);
+}
+
+.space__planet_venus:hover {
+  filter: drop-shadow(0 0 10px #ff0);
 }
 
 .space__planet_earth {
@@ -151,6 +158,10 @@
   width: var(--planet_earth_size);
 }
 
+.space__planet_earth:hover {
+  filter: drop-shadow(0 0 10px #0ff);
+}
+
 .space__planet_mars {
   --_planet_distance: var(--planet_mars_distance);
   
@@ -158,6 +169,10 @@
   background: url('./images/mars.png') center / contain no-repeat;
   height: var(--planet_mars_size);
   width: var(--planet_mars_size);
+}
+
+.space__planet_mars:hover {
+  filter: drop-shadow(0 0 10px #f40);
 }
 
 .space__planet_jupiter {
@@ -169,6 +184,10 @@
   width: var(--planet_jupiter_size);
 }
 
+.space__planet_jupiter:hover {
+  filter: drop-shadow(0 0 10px #fa0);
+}
+
 .space__planet_saturn {
   --_planet_distance: var(--planet_saturn_distance);
   
@@ -176,6 +195,10 @@
   background: url('./images/saturn.png') center / contain no-repeat;
   height: var(--planet_saturn_size);
   width: var(--planet_saturn_size);
+}
+
+.space__planet_saturn:hover {
+  filter: drop-shadow(0 0 10px #ff0);
 }
 
 .space__planet_uranus {
@@ -187,6 +210,10 @@
   width: var(--planet_uranus_size);
 }
 
+.space__planet_uranus:hover {
+  filter: drop-shadow(0 0 10px #0f8);
+}
+
 .space__planet_neptune {
   --_planet_distance: var(--planet_neptune_distance);
   
@@ -194,6 +221,10 @@
   background: url('./images/neptune.png') center / contain no-repeat;
   height: var(--planet_neptune_size);
   width: var(--planet_neptune_size);
+}
+
+.space__planet_neptune:hover {
+  filter: drop-shadow(0 0 10px #08f);
 }
 
 .space__sun {
