@@ -1,0 +1,180 @@
+.planets {
+  --_planet_distance: 0;
+  
+  --meta_plane_angle: 60deg;
+  
+  background: url('./images/background.jpg') center / cover;
+  display: grid;
+  perspective: 400vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.planets__meta_plane {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+  margin: -9999px;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--meta_plane_angle));
+}
+
+.planets * {
+  grid-area: 1 / 1;
+}
+
+.planets__body {
+  font: 20px 'Arial';
+  height: 50px;
+  pointer-events: initial;
+  text-decoration: none;
+  width: 50px;
+}
+
+.planets__body:hover .planets__title {
+  display: initial;
+}
+
+.planets__orbit {
+  border: 2px dashed #fff4;
+  border-radius: 100%;
+}
+
+.planets__orbit:nth-of-type(1) {
+  height: 200px;
+  width: 200px;
+}
+
+.planets__orbit:nth-of-type(2) {
+  height: 300px;
+  width: 300px;
+}
+
+.planets__orbit:nth-of-type(3) {
+  height: 400px;
+  width: 400px;
+}
+
+.planets__orbit:nth-of-type(4) {
+  height: 500px;
+  width: 500px;
+}
+
+.planets__orbit:nth-of-type(5) {
+  height: 600px;
+  width: 600px;
+}
+
+.planets__orbit:nth-of-type(6) {
+  height: 700px;
+  width: 700px;
+}
+
+.planets__orbit:nth-of-type(7) {
+  height: 800px;
+  width: 800px;
+}
+
+.planets__orbit:nth-of-type(8) {
+  height: 900px;
+  width: 900px;
+}
+
+.planets__planet {
+  animation: planet_rotation 1s linear infinite;
+}
+
+.planets__planet:hover {
+  height: 80px;
+  width: 80px;
+}
+
+.planets__planet:nth-of-type(1) {
+  --_planet_distance: 100px;
+  
+  animation-duration: 5s;
+  background: url('./images/mercury.png') center / contain no-repeat;
+}
+
+.planets__planet:nth-of-type(2) {
+  --_planet_distance: 150px;
+  
+  animation-duration: 7s;
+  background: url('./images/venus.png') center / contain no-repeat;
+}
+
+.planets__planet:nth-of-type(3) {
+  --_planet_distance: 200px;
+  
+  animation-duration: 8s;
+  background: url('./images/earth.png') center / contain no-repeat;
+}
+
+.planets__planet:nth-of-type(4) {
+  --_planet_distance: 250px;
+  
+  animation-duration: 9s;
+  background: url('./images/mars.png') center / contain no-repeat;
+}
+
+.planets__planet:nth-of-type(5) {
+  --_planet_distance: 300px;
+  
+  animation-duration: 10s;
+  background: url('./images/jupiter.png') center / contain no-repeat;
+}
+
+.planets__planet:nth-of-type(6) {
+  --_planet_distance: 350px;
+  
+  animation-duration: 12s;
+  background: url('./images/saturn.png') center / contain no-repeat;
+}
+
+.planets__planet:nth-of-type(7) {
+  --_planet_distance: 400px;
+  
+  animation-duration: 14s;
+  background: url('./images/uranus.png') center / contain no-repeat;
+}
+
+.planets__planet:nth-of-type(8) {
+  --_planet_distance: 450px;
+  
+  animation-duration: 16s;
+  background: url('./images/neptune.png') center / contain no-repeat;
+}
+
+.planets__sun {
+  background: url('./images/sun.png') center / contain no-repeat;
+  filter: drop-shadow(0 0 30px #fa0);
+  height: 100px;
+  transform: rotateX(calc(var(--meta_plane_angle) * -1));
+  width: 100px;
+}
+
+.planets__sun:hover {
+  height: 150px;
+  width: 150px;
+}
+
+.planets__title {
+  color: #fff;
+  display: none;
+  left: 100%;
+  position: relative;
+}
+
+
+
+
+@keyframes planet_rotation {
+  0% {
+    transform: rotateX(calc(var(--meta_plane_angle) * -1)) rotate(0deg) translateX(var(--_planet_distance));
+  }
+  
+  100% {
+    transform: rotateX(calc(var(--meta_plane_angle) * -1)) rotate3d(0, -0.866, 0.5, -360deg) translateX(var(--_planet_distance)) rotate3d(0, -0.866, 0.5, 360deg);
+  }
+}
