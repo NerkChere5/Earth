@@ -2,6 +2,7 @@
   background: url('./images/background.png') center / cover;
   filter: drop-shadow(0 0 80px #ffa8);
   height: 100%;
+  padding: 200px 100px;
   pointer-events: none;
   user-select: none;
   z-index: 1;
@@ -11,7 +12,25 @@
   pointer-events: initial;
 }
 
-.ship_text {
+.ship__text {
+  animation: text_blink 2s ease-in-out infinite;
   color: #8f8;
-  font: 50px 'Arial';
+  font: 40px 'Arial';
+}
+
+
+
+
+@keyframes text_blink {
+  0% {
+    opacity: 0.2;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0.2;
+  }
 }

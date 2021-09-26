@@ -40,7 +40,7 @@
   
   background: url('./images/background.jpg') center / cover;
   display: grid;
-  perspective: 400vh;
+  perspective: 70vw;
   height: 100%;
   overflow: hidden;
   user-select: none;
@@ -53,6 +53,8 @@
   justify-items: center;
   margin: -9999px;
   pointer-events: none;
+  position: relative;
+  top: -70px;
   transform-style: preserve-3d;
   transform: rotateX(var(--meta_plane_angle));
 }
