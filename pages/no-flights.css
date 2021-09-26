@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background: url('../images/background2.gif');
+}
+
+.message {
+  height: 100vh;
+  width: 100vw;
+  background: #000d;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  align-items: center;
+}
+
+.message {
+  color: #fff;
+  font: 44px 'Arial Black';
+}
+
+a {
+  font: 26px 'Arial Black';
+  color: #fff;
+  text-decoration: none;
+}
