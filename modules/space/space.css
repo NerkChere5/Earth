@@ -19,6 +19,24 @@
   --planet_uranus_distance: 400px;
   --planet_neptune_distance: 450px;
   
+  --planet_mercury_period: 5s;
+  --planet_venus_period: 5s;
+  --planet_earth_period: 5s;
+  --planet_mars_period: 5s;
+  --planet_jupiter_period: 5s;
+  --planet_saturn_period: 5s;
+  --planet_uranus_period: 5s;
+  --planet_neptune_period: 5s;
+  
+  --planet_mercury_size: 80px;
+  --planet_venus_size: 80px;
+  --planet_earth_size: 80px;
+  --planet_mars_size: 80px;
+  --planet_jupiter_size: 80px;
+  --planet_saturn_size: 80px;
+  --planet_uranus_size: 80px;
+  --planet_neptune_size: 80px;
+  
   background: url('./images/background.jpg') center / cover;
   display: grid;
   perspective: 400vh;
@@ -110,57 +128,73 @@
 .space__planet_mercury {
   --_planet_distance: var(--planet_mercury_distance);
   
-  animation-duration: 5s;
+  animation-duration: var(--planet_mercury_period);
   background: url('./images/mercury.png') center / contain no-repeat;
+  height: var(--planet_mercury_size);
+  width: var(--planet_mercury_size);
 }
 
 .space__planet_venus {
   --_planet_distance: var(--planet_venus_distance);
   
-  animation-duration: 7s;
+  animation-duration: var(--planet_venus_period);
   background: url('./images/venus.png') center / contain no-repeat;
+  height: var(--planet_venus_size);
+  width: var(--planet_venus_size);
 }
 
 .space__planet_earth {
   --_planet_distance: var(--planet_earth_distance);
   
-  animation-duration: 8s;
+  animation-duration: var(--planet_earth_period);
   background: url('./images/earth.png') center / contain no-repeat;
+  height: var(--planet_earth_size);
+  width: var(--planet_earth_size);
 }
 
 .space__planet_mars {
   --_planet_distance: var(--planet_mars_distance);
   
-  animation-duration: 9s;
+  animation-duration: var(--planet_mars_period);
   background: url('./images/mars.png') center / contain no-repeat;
+  height: var(--planet_mars_size);
+  width: var(--planet_mars_size);
 }
 
 .space__planet_jupiter {
   --_planet_distance: var(--planet_jupiter_distance);
   
-  animation-duration: 10s;
+  animation-duration: var(--planet_jupiter_period);
   background: url('./images/jupiter.png') center / contain no-repeat;
+  height: var(--planet_jupiter_size);
+  width: var(--planet_jupiter_size);
 }
 
 .space__planet_saturn {
   --_planet_distance: var(--planet_saturn_distance);
   
-  animation-duration: 12s;
+  animation-duration: var(--planet_saturn_period);
   background: url('./images/saturn.png') center / contain no-repeat;
+  height: var(--planet_saturn_size);
+  width: var(--planet_saturn_size);
 }
 
 .space__planet_uranus {
   --_planet_distance: var(--planet_uranus_distance);
   
-  animation-duration: 14s;
+  animation-duration: var(--planet_uranus_period);
   background: url('./images/uranus.png') center / contain no-repeat;
+  height: var(--planet_uranus_size);
+  width: var(--planet_uranus_size);
 }
 
 .space__planet_neptune {
   --_planet_distance: var(--planet_neptune_distance);
   
-  animation-duration: 16s;
+  animation-duration: var(--planet_neptune_period);
   background: url('./images/neptune.png') center / contain no-repeat;
+  height: var(--planet_neptune_size);
+  width: var(--planet_neptune_size);
 }
 
 .space__sun {
