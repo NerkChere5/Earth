@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel='stylesheet' href='./mercury.css'>
+    <link rel='shortcut icon' href='../images/favicon.ico' type='image/x-icon'>
+    
+    <meta charset='utf-8'>
+    
+    <title>Земля в илюминаторе</title>
+  </head>
+  
+  <body>
+    <div class='header'>
+      <div class='header_title'>Горная планета - Меркурий</div>
+    </div>
+    
+    <div class='content'>
+      <div class='discription'>
+        <ul>
+          <li>Меркурий — ближайшая к Солнцу планета Солнечной системы, наименьшая из планет земной группы. Названа в честь древнеримского бога торговли — быстрого Меркурия, поскольку она движется по небу быстрее других планет. Её период обращения вокруг Солнца составляет всего 87,97 земных суток — самый короткий среди всех планет Солнечной системы. </li>
+          
+          <li>Видимое расстояние Меркурия от Солнца, если смотреть с Земли, никогда не превышает 28°. Эта близость к Солнцу означает, что планету можно увидеть только в течение небольшого времени после захода или до восхода солнца, обычно в сумерках.</li>
+          
+          <li>Меркуряне - очень добродушные существа. Они всегда рады гостям. Эти существа питаются кокосами и очень любят капуту. Если вы захотите подружиться с марсианином, то прежде чем это сделать вам придётся войти к нему в довереие, Меркуряне очень осторожные существа.</li>
+          
+          <li>Жизнь на Меркурии идёт своим чередом, всё что вам необходимо для проживания - это скафандор с воздух. Всё остальное можно купить в меркурянском магазине.</li>
+        </ul>
+      </div>
+      
+      <div class='gallery'>
+        <div class='container'>
+          <div class='slide' style="background: url('../images/mercury1.jpg') no-repeat;">
+            <h3>Бассейн Калорис</h3>
+          </div>
+          <div class='slide' style="background: url('../images/mercury2.jpg') no-repeat;">
+            <h3>Утёсы Меркурия</h3>
+          </div>
+          <div class='slide' style="background: url('../images/mercury3.jpg') no-repeat;">
+            <h3>Эскарп Дискавери</h3>
+          </div>
+          <div class='slide active' style="background: url('../images/mercury4.png') no-repeat;">
+            <h3>Равнина Жары</h3>
+          </div>
+          <div class='slide' style="background: url('../images/mercury5.jpg') no-repeat;">
+            <h3>Хребет Паук</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class='price'>
+        <div class='price_title'>Стоимость тура</div>
+        
+        <div class='economy class'>
+          <div class='cost_tittle'>Эконом</div>
+          <ul>
+            <li>Трансфер до Меркурия и обратно</li>
+            <li>2 экскурсии по выбору</li>
+            <li>3 дня</li>
+            <li>Проживание в отеле &#9733; &#9733; &#9733;</li>
+          </ul>
+          <div class='cost'>500.0$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+        <div class='comfort class'>
+          <div class='cost_tittle'>Комфорт</div>
+          <ul>
+            <li>Трансфер до Меркурия и обратно</li>
+            <li>6 экскурсии по выбору</li>
+            <li>10 дней</li>
+            <li>Проживание в отеле &#9733; &#9733; &#9733;&#9733; &#9733; &#9733;</li>
+          </ul>
+          <div class='cost'>820.0$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+        <div class='premium class'>
+          <div class='cost_tittle'>Премиум</div>
+          <ul>
+            <li>Трансфер до Меркурия и обратно</li>
+            <li>9 экскурсии по выбору</li>
+            <li>Личный экскурсовод</li>
+            <li>11 дней</li>
+            <li>Проживание в своём личном доме</li>
+          </ul>
+          <div class='cost'>1000.0$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+      </div>
+    </div>
+    
+    <div class='form'>
+      <div class='form_title'>Отзывы</div>
+      <form method='post'  action=''>
+  
+        <div class='inpyt_box'>
+          <input placeholder='Ваше имя'>
+        </div>
+        <div class='inpyt_box'>
+          <input type='email' placeholder='Ваш e-mail'>
+        </div>
+        <div class='inpyt_box'>
+          <textarea rows='10' placeholder='Ваше сообщение'></textarea>
+        </div>
+        <input type='submit' class='submit' value='Оставить комментарий'>
+      </form>
+      <div class='line'></div>
+      <div class='answers'>
+        <div class='answer_1'>Замечательно турагенство! Мне очень понравилось! Неделю назад побывал на Венере вообще отпад! Планирую лететь на Марс.</div>
+        <span class='icon'>Виктор</span>
+      </div>
+    </div>
+    
+    <a class='return' href='../index.html'>Вернуться на главную страницу</a>  
+  </body>
+  
+  <script>
+    let slides = document.querySelectorAll('.slide');
+
+    for (let slide of slides) {
+      slide.addEventListener('mouseenter', () => {
+        clearActiveClasses();
+    
+        slide.classList.add('active')
+      });
+    }
+
+    function clearActiveClasses() {
+      slides.forEach((slide) => {
+        slide.classList.remove('active')
+      });
+    }
+  </script>
+  
+</html>

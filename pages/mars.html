@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel='stylesheet' href='./mars.css'>
+    <link rel='shortcut icon' href='../images/favicon.ico' type='image/x-icon'>
+    
+    <meta charset='utf-8'>
+    
+    <title>Земля в илюминаторе</title>
+  </head>
+  
+  <body>
+    <div class='header'>
+      <div class='header_title'>Прекрасные бескрайние пустыни Марса</div>
+    </div>
+    
+    <div class='content'>
+      <div class='discription'>
+        <ul>
+          <li>Марс — четвёртая по удалённости от Солнца и седьмая по размеру планета Солнечной системы; масса планеты составляет 10,7 % массы   Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому   Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности,   придаваемого ей минералом маггемитом — γ-оксидом железа.</li>
+          
+          <li>Марс — планета земной группы с разреженной атмосферой (давление на поверхности в 160 раз меньше земного). Особенностями поверхностного рельефа Марса можно считать ударные кратеры наподобие лунных, а также вулканы,   долины, пустыни и полярные ледниковые шапки наподобие земных.</li>
+          
+          <li>Марсиане - очень добродушные существа. Они всегда рады гостям. Эти существа питаются сладкой ватой и очень любят земные яблоки. Если вы ахотите подружиться с марсианином, то просто придложите ему яблоко.</li>
+          
+          <li>Жизнь на Марсе идёт своим чередом, всё что вам необходимо для проживания - это скафандор с воздух. Всё остальное можно купить в марсианском магазине.</li>
+        </ul>
+      </div>
+      
+      <div class='gallery'>
+        <div class='container'>
+          <div class='slide' style="background: url('../images/mars1.jpg') no-repeat;">
+            <h3>Южная область Лабиринта Ночи</h3>
+          </div>
+          <div class='slide' style="background: url('../images/mars2.jpg') no-repeat;">
+            <h3>Плато Хаос Арам</h3>
+          </div>
+          <div class='slide' style="background: url('../images/mars3.jpg') no-repeat;">
+            <h3>Каньон Западный Кэндор</h3>
+          </div>
+          <div class='slide active' style="background: url('../images/mars4.jpg') no-repeat;">
+            <h3>Гора Олимп</h3>
+          </div>
+          <div class='slide' style="background: url('../images/mars5.webp') no-repeat;">
+            <h3>Северный полюс</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class='price'>
+        <div class='price_title'>Стоимость тура</div>
+        
+        <div class='economy class'>
+          <div class='cost_tittle'>Эконом</div>
+          <ul>
+            <li>Трансфер до Марса и обратно</li>
+            <li>2 экскурсии по выбору</li>
+            <li>3 дня</li>
+            <li>Проживание в отеле &#9733; &#9733; &#9733;</li>
+          </ul>
+          <div class='cost'>439.7$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+        <div class='comfort class'>
+          <div class='cost_tittle'>Комфорт</div>
+          <ul>
+            <li>Трансфер до Марса и обратно</li>
+            <li>6 экскурсии по выбору</li>
+            <li>10 дней</li>
+            <li>Проживание в отеле &#9733; &#9733; &#9733;&#9733; &#9733; &#9733;</li>
+          </ul>
+          <div class='cost'>761.2$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+        <div class='premium class'>
+          <div class='cost_tittle'>Премиум</div>
+          <ul>
+            <li>Трансфер до Марса и обратно</li>
+            <li>9 экскурсии по выбору</li>
+            <li>Личный экскурсовод</li>
+            <li>11 дней</li>
+            <li>Проживание во дворце марсианского короля</li>
+          </ul>
+          <div class='cost'>830.6$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+      </div>
+    </div>
+    
+    <div class='form'>
+      <div class='form_title'>Отзывы</div>
+      <form method='post'  action=''>
+  
+        <div class='inpyt_box'>
+          <input placeholder='Ваше имя'>
+        </div>
+        <div class='inpyt_box'>
+          <input type='email' placeholder='Ваш e-mail'>
+        </div>
+        <div class='inpyt_box'>
+          <textarea rows='10' placeholder='Ваше сообщение'></textarea>
+        </div>
+        <input type='submit' class='submit' value='Оставить комментарий'>
+      </form>
+      <div class='line'></div>
+      <div class='answers'>
+        <div class='answer_1'>Замечательно турагенство! Мне очень понравилось! Неделю назад побывал на Венере вообще отпад! Планирую лететь на Марс.</div>
+        <span class='icon'>Виктор</span>
+      </div>
+    </div>
+    
+    <a class='return' href='../index.html'>Вернуться на главную страницу</a>
+  </body>
+  
+  <script>
+    let slides = document.querySelectorAll('.slide');
+
+    for (let slide of slides) {
+      slide.addEventListener('mouseenter', () => {
+        clearActiveClasses();
+    
+        slide.classList.add('active')
+      });
+    }
+
+    function clearActiveClasses() {
+      slides.forEach((slide) => {
+        slide.classList.remove('active')
+      });
+    }
+  </script>
+  
+</html>
