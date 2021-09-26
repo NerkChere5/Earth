@@ -1,10 +1,17 @@
 .ship {
   background: url('./images/background.png') center / cover;
+  filter: drop-shadow(0 0 80px #ffa8);
   height: 100%;
   pointer-events: none;
+  user-select: none;
   z-index: 1;
 }
 
 .ship * {
   pointer-events: initial;
+}
+
+.ship_text {
+  color: #8f8;
+  font: 50px 'Arial';
 }

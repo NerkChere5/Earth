@@ -33,16 +33,17 @@
   --planet_earth_size: 45px;
   --planet_mars_size: 30px;
   --planet_jupiter_size: 80px;
-  --planet_saturn_size: 150px;
-  --planet_uranus_size: 70px;
-  --planet_neptune_size: 70px;
-  --sun_size: 150px;
+  --planet_saturn_size: 100px;
+  --planet_uranus_size: 60px;
+  --planet_neptune_size: 60px;
+  --sun_size: 100px;
   
   background: url('./images/background.jpg') center / cover;
   display: grid;
   perspective: 400vh;
   height: 100%;
   overflow: hidden;
+  user-select: none;
   z-index: 0;
 }
 
