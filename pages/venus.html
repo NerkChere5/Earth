@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel='stylesheet' href='./venus.css'>
+    <link rel='shortcut icon' href='../images/favicon.ico' type='image/x-icon'>
+    
+    <meta charset='utf-8'>
+    
+    <title>Земля в илюминаторе</title>
+  </head>
+  
+  <body>
+    <div class='header'>
+      <div class='header_title'>Затягивающие взгляд пески Венеры</div>
+    </div>
+    
+    <div class='content'>
+      <div class='discription'>
+        <ul>
+          <li>Венера — вторая по удалённости от Солнца и шестая по размеру планета Солнечной системы, наряду с Меркурием, Землёй и Марсом принадлежащая к семейству планет земной группы. Названа в честь древнеримской богини любви Венеры. По ряду характеристик — например, по массе и размерам — Венера считается «сестрой» Земли.</li>
+          
+          <li>Венерианский год составляет 224,7 земных суток. Венера имеет плотную атмосферу, состоящую более чем на 96 % из углекислого газа. Атмосферное давление на поверхности планеты в 92 раза больше, чем на поверхности Земли, и примерно равно давлению воды на глубине 900 метров.</li>
+          
+          <li>Венеряне - очень добродушные существа. Они всегда рады гостям. Эти существа питаются грецкими орехами,очень любят изюм и не употребляют и не любят воду. Если вы захотите зависти друзей на Венере, то запасайтесь арбузами, ведь венеряне их тоже обожают.</li>
+          
+          <li>Жизнь на Венере идёт своим чередом, всё что вам необходимо для проживания - это скафандор с воздух и вода, т.к.на Венере с этим большие проблемы. Всё остальное можно купить в венерянском магазине.</li>
+        </ul>
+      </div>
+      
+      <div class='gallery'>
+        <div class='container'>
+          <div class='slide' style="background: url('../images/venus1.jpg');">
+            <h3>Вулкaн Гopa Maaти</h3>
+          </div>
+          <div class='slide' style="background: url('../images/venus2.jpg');">
+            <h3>Горы Максвелла</h3>
+          </div>
+          <div class='slide' style="background: url('../images/venus3.jpg');">
+            <h3>Kpaтep Уитли</h3>
+          </div>
+          <div class='slide active' style="background: url('../images/venus4.jpg');">
+            <h3>Bулкaн в peгиoнe Фeмидa</h3>
+          </div>
+          <div class='slide' style="background: url('../images/venus5.webp');">
+            <h3>Высохшие озера</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class='price'>
+        <div class='price_title'>Стоимость тура</div>
+        
+        <div class='economy class'>
+          <div class='cost_tittle'>Эконом</div>
+          <ul>
+            <li>Трансфер до Венеры и обратно</li>
+            <li>2 экскурсии по выбору</li>
+            <li>3 дня</li>
+            <li>Проживание в отеле &#9733; &#9733; &#9733;</li>
+          </ul>
+          <div class='cost'>400.7$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+        <div class='comfort class'>
+          <div class='cost_tittle'>Комфорт</div>
+          <ul>
+            <li>Трансфер до Венеры и обратно</li>
+            <li>6 экскурсии по выбору</li>
+            <li>10 дней</li>
+            <li>Проживание в отеле &#9733; &#9733; &#9733;&#9733; &#9733; &#9733;</li>
+          </ul>
+          <div class='cost'>750.2$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+        <div class='premium class'>
+          <div class='cost_tittle'>Премиум</div>
+          <ul>
+            <li>Трансфер до Венеры и обратно</li>
+            <li>9 экскурсии по выбору</li>
+            <li>Личный экскурсовод</li>
+            <li>11 дней</li>
+            <li>Проживание в резиденции венерянского президента</li>
+          </ul>
+          <div class='cost'>800.6$</div>
+          <center><input class='price_buy' type='submit' value='Забронировать места'></center>
+        </div>
+      </div>
+    </div>
+    
+    <form method='post'  action=''>
+      <div class='inpyt_box'>
+        <input placeholder='Ваше имя'>
+      </div>
+      <div class='inpyt_box'>
+        <input type='email' placeholder='Ваш e-mail'>
+      </div>
+      <div class='inpyt_box'>
+        <textarea rows='10' placeholder='Ваше сообщение'></textarea>
+      </div>
+      <input type='submit' value='Оставить комментарий'>
+    </form>
+    <a class='return' href='../index.html'>Вернуться на главную страницу</a>  
+  </body>
+  
+  <script>
+    let slides = document.querySelectorAll('.slide');
+
+    for (let slide of slides) {
+      slide.addEventListener('mouseenter', () => {
+        clearActiveClasses();
+    
+        slide.classList.add('active')
+      });
+    }
+
+    function clearActiveClasses() {
+      slides.forEach((slide) => {
+        slide.classList.remove('active')
+      });
+    }
+  </script>
+  
+</html>
