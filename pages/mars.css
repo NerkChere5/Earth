@@ -1,4 +1,5 @@
 body {
+  background: url('../images/background.jpg') center / cover;
   margin: 0;
 }
 
@@ -6,13 +7,13 @@ body {
 
 
 .header {
+  align-items: center;
   background: url('../images/mars.jpg') center / cover;
-  height: 100vh;
-  width: 100vw;
   display: grid;
   grid-template: 1fr / 1fr;
-  align-items: center;
+  height: 100vh;
   justify-items: center;
+  width: 100vw;
 }
 
 .header_title {
@@ -20,21 +21,70 @@ body {
   font: 46px 'Arial Black';
 }
 
+.discription {
+  background: #000a;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.discription * {
+  color: #fff;
+  font: 18px 'Verdana';
+}
+.price {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, 1fr);
+  margin: 25px;
+  color: #000;
+  font: 18px 'Arial Black';
+  grid-gap: 50px;
+  user-select: none;
+}
+
+.price_title {
+  grid-column-start: 1;
+  grid-column-end: -1;;
+  font-size: 26px;
+  color: #fff;
+}
+
+.class {
+  background: #fff;
+  box-shadow: 30px 20px 20px #000;
+  border-radius: 26px;
+  padding: 10px;
+}
+
+form {
+  margin: 20px;
+}
+
+.price_buy {
+  background: green;
+  border-radius: 30px;
+  border: 2px solid green;
+  color: #fff;
+  cursor: pointer;
+  font: 18px 'Arial Black';
+  margin: 10px;
+  padding: 10px;
+}
+
+.price_buy:active {
+  border: 2px solid #fff;
+}
+
+.return {
+  text-decoration: none;
+  color: #fff;
+}
+
 
 
 
 .gallery * {
   box-sizing: border-box;
-}
-
-gallery {
-  align-items: center;
-  background: #afa;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  margin: 0;
-  overflow: hidden;
 }
 
 .container {
