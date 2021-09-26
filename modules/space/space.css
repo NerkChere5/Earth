@@ -8,6 +8,7 @@
   perspective: 400vh;
   height: 100%;
   overflow: hidden;
+  z-index: 0;
 }
 
 .space__meta_plane {
