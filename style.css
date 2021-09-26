@@ -5,3 +5,7 @@ body {
   justify-items: center;
   margin: 0;
 }
+
+body * {
+  grid-area: 1 / 1;
+}

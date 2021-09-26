@@ -1,10 +1,9 @@
 .ship {
-  background: url('./images/background.png') center / contain no-repeat;
+  background: url('./images/background.png') center / cover;
   height: 100%;
   pointer-events: none;
 }
 
 .ship * {
-  grid-area: 1 / 1;
   pointer-events: initial;
 }
