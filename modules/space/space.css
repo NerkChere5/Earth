@@ -10,32 +10,33 @@
   --_planet_distance: 0;
   
   --meta_plane_angle: 60deg;
-  --planet_mercury_distance: 100px;
-  --planet_venus_distance: 150px;
-  --planet_earth_distance: 200px;
-  --planet_mars_distance: 250px;
-  --planet_jupiter_distance: 300px;
-  --planet_saturn_distance: 350px;
-  --planet_uranus_distance: 400px;
+  --planet_mercury_distance: 70px;
+  --planet_venus_distance: 90px;
+  --planet_earth_distance: 120px;
+  --planet_mars_distance: 180px;
+  --planet_jupiter_distance: 250px;
+  --planet_saturn_distance: 320px;
+  --planet_uranus_distance: 380px;
   --planet_neptune_distance: 450px;
   
-  --planet_mercury_period: 5s;
-  --planet_venus_period: 5s;
-  --planet_earth_period: 5s;
-  --planet_mars_period: 5s;
-  --planet_jupiter_period: 5s;
-  --planet_saturn_period: 5s;
-  --planet_uranus_period: 5s;
-  --planet_neptune_period: 5s;
+  --planet_mercury_period: 6s;
+  --planet_venus_period: 8s;
+  --planet_earth_period: 10s;
+  --planet_mars_period: 12s;
+  --planet_jupiter_period: 15s;
+  --planet_saturn_period: 20s;
+  --planet_uranus_period: 25s;
+  --planet_neptune_period: 30s;
   
-  --planet_mercury_size: 80px;
-  --planet_venus_size: 80px;
-  --planet_earth_size: 80px;
-  --planet_mars_size: 80px;
+  --planet_mercury_size: 20px;
+  --planet_venus_size: 40px;
+  --planet_earth_size: 45px;
+  --planet_mars_size: 30px;
   --planet_jupiter_size: 80px;
-  --planet_saturn_size: 80px;
-  --planet_uranus_size: 80px;
-  --planet_neptune_size: 80px;
+  --planet_saturn_size: 150px;
+  --planet_uranus_size: 70px;
+  --planet_neptune_size: 70px;
+  --sun_size: 150px;
   
   background: url('./images/background.jpg') center / cover;
   display: grid;
@@ -120,11 +121,6 @@
   animation: planet_rotation 1s linear infinite;
 }
 
-.space__planet:hover {
-  height: 80px;
-  width: 80px;
-}
-
 .space__planet_mercury {
   --_planet_distance: var(--planet_mercury_distance);
   
@@ -200,14 +196,9 @@
 .space__sun {
   background: url('./images/sun.png') center / contain no-repeat;
   filter: drop-shadow(0 0 30px #fa0);
-  height: 100px;
+  height: var(--sun_size);
   transform: rotateX(calc(var(--meta_plane_angle) * -1));
-  width: 100px;
-}
-
-.space__sun:hover {
-  height: 150px;
-  width: 150px;
+  width: var(--sun_size);
 }
 
 .space__title {
