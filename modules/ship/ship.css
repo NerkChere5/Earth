@@ -5,5 +5,6 @@
 }
 
 .ship * {
+  grid-area: 1 / 1;
   pointer-events: initial;
 }
