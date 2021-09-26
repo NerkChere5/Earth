@@ -1,0 +1,9 @@
+.ship {
+  background: url('./images/background.png') center / contain no-repeat;
+  height: 100%;
+  pointer-events: none;
+}
+
+.ship * {
+  pointer-events: initial;
+}

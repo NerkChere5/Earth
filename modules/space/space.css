@@ -6,7 +6,7 @@
   background: url('./images/background.jpg') center / cover;
   display: grid;
   perspective: 400vh;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
