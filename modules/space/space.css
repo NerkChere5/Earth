@@ -231,7 +231,7 @@
   background: url('./images/sun.png') center / contain no-repeat;
   filter: drop-shadow(0 0 30px #fa0);
   height: var(--sun_size);
-  transform: rotateX(calc(var(--meta_plane_angle) * -1));
+  transform: rotateX(calc(-1 * var(--meta_plane_angle)));
   width: var(--sun_size);
 }
 
@@ -247,10 +247,14 @@
 
 @keyframes planet_rotation {
   0% {
-    transform: rotateX(calc(var(--meta_plane_angle) * -1)) rotate(0deg) translateX(var(--_planet_distance));
+    --__angle: 0turn;
+    
+    transform: rotate(calc(-1 * var(--__angle))) translateX(var(--_planet_distance)) rotate(var(--__angle)) rotateX(calc(-1 * var(--meta_plane_angle)));
   }
   
   100% {
-    transform: rotateX(calc(var(--meta_plane_angle) * -1)) rotate3d(0, -0.866, 0.5, -360deg) translateX(var(--_planet_distance)) rotate3d(0, -0.866, 0.5, 360deg);
+    --__angle: 1turn;
+    
+    transform: rotate(calc(-1 * var(--__angle))) translateX(var(--_planet_distance)) rotate(var(--__angle)) rotateX(calc(-1 * var(--meta_plane_angle)));
   }
 }
