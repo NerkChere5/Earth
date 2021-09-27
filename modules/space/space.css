@@ -7,8 +7,6 @@
   --_orbit_saturn_diameter: calc(var(--planet_saturn_distance) * 2);
   --_orbit_uranus_diameter: calc(var(--planet_uranus_distance) * 2);
   --_orbit_neptune_diameter: calc(var(--planet_neptune_distance) * 2);
-  --_planet_rotation: rotate(calc(-1 * var(--_planet_rotation_angle))) translateX(var(--_planet_distance)) rotate(var(--_planet_rotation_angle)) rotateX(calc(-1 * var(--meta_plane_angle)));
-  --_planet_rotation_angle: 0;
   --_planet_distance: 0;
   
   --meta_plane_angle: 60deg;
@@ -249,14 +247,14 @@
 
 @keyframes planet_rotation {
   0% {
-    --_planet_rotation_angle: 0turn;
+    --__angle: 0turn;
     
-    transform: var(--_planet_rotation);
+    transform: rotate(calc(-1 * var(--__angle))) translateX(var(--_planet_distance)) rotate(var(--__angle)) rotateX(calc(-1 * var(--meta_plane_angle)));
   }
   
   100% {
-    --_planet_rotation_angle: 1turn;
+    --__angle: 1turn;
     
-    transform: var(--_planet_rotation);
+    transform: rotate(calc(-1 * var(--__angle))) translateX(var(--_planet_distance)) rotate(var(--__angle)) rotateX(calc(-1 * var(--meta_plane_angle)));
   }
 }
