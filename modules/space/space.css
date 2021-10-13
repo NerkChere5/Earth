@@ -46,18 +46,6 @@
   z-index: 0;
 }
 
-.space__meta_plane {
-  align-items: center;
-  display: grid;
-  justify-items: center;
-  margin: -1000px;
-  pointer-events: none;
-  position: relative;
-  top: -70px;
-  transform-style: preserve-3d;
-  transform: rotateX(var(--meta_plane_angle));
-}
-
 .space * {
   grid-area: 1 / 1;
 }
@@ -74,9 +62,22 @@
   display: initial;
 }
 
+.space__meta_plane {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+  margin: -1000px;
+  pointer-events: none;
+  position: relative;
+  top: -70px;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--meta_plane_angle));
+}
+
 .space__orbit {
   border: 2px dashed #fff4;
   border-radius: 100%;
+  z-index: 0;
 }
 
 .space__orbit_earth {
@@ -121,6 +122,7 @@
 
 .space__planet {
   animation: planet_rotation 1s linear infinite;
+  z-index: 0;
 }
 
 .space__planet_earth {

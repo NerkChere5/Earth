@@ -5,7 +5,6 @@
   padding: 15vh 10vw;
   pointer-events: none;
   user-select: none;
-  z-index: 1;
 }
 
 .ship__text {
